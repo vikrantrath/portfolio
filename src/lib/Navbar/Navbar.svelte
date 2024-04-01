@@ -13,10 +13,6 @@
 		{
 			label: 'Experience',
 			url: '/experience'
-		},
-		{
-			label: 'Contact & Social',
-			url: '/contact'
 		}
 	];
 </script>

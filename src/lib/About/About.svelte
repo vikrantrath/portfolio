@@ -3,8 +3,22 @@
 	import SocialLinks from './SocialLinks/SocialLinks.svelte';
 	import arrowLeftIcon from '$lib/assets/arrow-left.svg';
 	import downloadIcon from '$lib/assets/download-icon.svg';
+	import resume from '$lib/vikrant_rath_resume.pdf';
 
 	import './about.scss';
+	import Tooltip from '$lib/Tooltip/Tooltip.svelte';
+
+	function downloadFile() {
+		let link = document.createElement('a');
+		link.download = 'vikrant_rath_resume.pdf';
+		link.href = resume;
+		link.click();
+	}
+
+	const email = 'vikrantrath4@gmail.com';
+	function handleEmailClick() {
+		navigator.clipboard.writeText(email);
+	}
 </script>
 
 <div class="about lg:flex lg:justify-between lg:gap-4">
@@ -16,6 +30,11 @@
 		<p class="mt-4 max-w-xs leading-normal">
 			I build fluid, dynamic, and scalable applications with seamless user experiences across the
 			frontend and backend.
+		</p>
+		<p class="mt-4 max-w-xs leading-normal">
+			Reach out to me at <button on:click={handleEmailClick} class="cursor-pointer"
+				><Tooltip tooltipText="copy"><strong>{email}</strong></Tooltip></button
+			>
 		</p>
 		<SocialLinks />
 		<Skills />
@@ -53,10 +72,12 @@
 			collaborative environments where creativity and innovation is encouraged.
 		</p>
 		<div class="flex flex-col mt-4 gap-4">
-			<a class="mt-4 flex gap-1" href="/projects"
-				>Resume<img class="w-5" src={downloadIcon} alt="arrow-left" /></a
+			<button class="mt-4 flex gap-1" on:click={downloadFile}
+				>Resume<img class="w-5" src={downloadIcon} alt="arrow-left" /></button
 			>
-			<span>Professional Experience</span>
+			<a class="mt-4 flex gap-1" href="/experience"
+				>Professional Experience <img class="w-5 pt-1" src={arrowLeftIcon} alt="arrow-left" /></a
+			>
 		</div>
 	</div>
 </div>

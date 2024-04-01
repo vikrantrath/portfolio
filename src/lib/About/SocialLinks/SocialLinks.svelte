@@ -11,11 +11,11 @@
 		icon: linkedinLogo,
 		url: 'https://www.linkedin.com/in/vikrantrath/'
 	};
-	const mail = {
-		name: 'email',
-		icon: mailLogo,
-		url: '/contact'
-	};
+	// const mail = {
+	// 	name: 'email',
+	// 	icon: mailLogo,
+	// 	url: '/contact'
+	// };
 	const leetcode = {
 		name: 'leetcode',
 		icon: leetcodeLogo,
@@ -33,5 +33,4 @@
 	<a href={leetcode.url} target="_blank" rel="noopener noreferrer"
 		><img class="w-8" src={leetcode.icon} alt="mail-link" /></a
 	>
-	<a href={mail.url}><img class="w-8" src={mail.icon} alt="mail-link" /></a>
 </ul>

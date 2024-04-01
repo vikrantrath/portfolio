@@ -39,5 +39,5 @@
 		/* height: 100%; */
 		width: 100%;
 		color: rgb(226, 232, 240);
-	}
+	}	
 </style>

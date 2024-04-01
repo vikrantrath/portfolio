@@ -1,21 +1,7 @@
 .about {
-
     h1,
     h2 {
         --tw-text-opacity: 1;
         color: rgb(226 232 240/var(--tw-text-opacity));
     }
-
-    p {
-        color: rgb(147 162 183);
-
-        strong {
-            color: rgb(226 232 240);
-        }
-
-        &.brief{
-            margin-top: 0.5rem;
-        }
-    }
-
 }
