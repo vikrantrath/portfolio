@@ -19,6 +19,25 @@
 	function handleEmailClick() {
 		navigator.clipboard.writeText(email);
 	}
+
+	const skills: string[] = [
+		'TypeScript',
+		'JavaScript',
+		'Java',
+		'Python',
+		'HTML',
+		'CSS',
+		'SCSS',
+		'SpringBoot',
+		'ReactJS',
+		'VueJs',
+		'Angular',
+		'Gatsby',
+		'NodeJS',
+		'Back-End',
+		'Front-End',
+		'Full-Stack'
+	];
 </script>
 
 <div class="about lg:flex lg:justify-between lg:gap-4">
@@ -37,7 +56,7 @@
 			>
 		</p>
 		<SocialLinks />
-		<Skills />
+		<Skills {skills} />
 		<a class="mt-4 flex gap-1" href="/projects"
 			>View My Projects <img class="w-5 pt-1" src={arrowLeftIcon} alt="arrow-left" /></a
 		>
@@ -79,5 +98,9 @@
 				>Professional Experience <img class="w-5 pt-1" src={arrowLeftIcon} alt="arrow-left" /></a
 			>
 		</div>
+		<p class="mt-12">
+			Inspired by <a href="https://brittanychiang.com/" target="_blank"><strong>Brittany Chiang</strong></a> and coded
+			in Visual Studio Code by yours truly. Built with SvelteKit and Tailwind CSS, deployed with Netlify.
+		</p>
 	</div>
 </div>

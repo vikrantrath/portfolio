@@ -1,15 +1,29 @@
 <script lang="ts">
 	import type { Tile } from '$lib/@types/Tile';
-	import openLogo from '$lib/assets/open.svg';
 	export let tile: Tile;
 </script>
 
-<div class="container flex gap-8">
-	<img class="w-1/2  max-h-40" src={tile.imageUrl} alt={`project-${tile.title}`} />
+<a class="container flex gap-8 project-tile p-4" href={tile.link} target="_blank">
+	<img class="w-1/2 max-h-40" src={tile.imageUrl} alt={`project-${tile.title}`} />
 	<div class="flex flex-col w-1/2">
-		<span class="text-lg font-medium tracking-tight text-slate-200 sm:text-xl flex items-center gap-4"
-			>{tile.title}<a class="h-6" href={tile.link} target="_blank"><img src={openLogo} alt="open" /></a></span
+		<span
+			class="text-lg font-medium tracking-tight text-slate-200 sm:text-xl flex items-center gap-4 title"
+			>{tile.title}</span
 		>
 		<p>{tile.description}</p>
 	</div>
-</div>
+</a>
+
+<style lang="scss">
+	.project-tile:hover {
+		background: rgba(255, 255, 255, 0.05);
+		border-radius: 1rem;
+		box-shadow:
+			0 4px 8px 0 rgba(0, 0, 0, 0.2),
+			0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+		.title {
+			color: rgb(94, 234, 212);
+		}
+	}
+</style>
