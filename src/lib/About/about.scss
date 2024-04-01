@@ -1,16 +1,4 @@
 .about {
-    padding: 6rem;
-    display: flex;
-    column-gap: 10rem;
-    justify-content: center;
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
 
     h1,
     h2 {
@@ -19,15 +7,14 @@
     }
 
     p {
-        width: 20rem;
-        font-size: 1.2rem;
-    }
+        color: rgb(147 162 183);
 
-    .intro {
-        padding-top: 2rem;
+        strong {
+            color: rgb(226 232 240);
+        }
 
-        .brief {
-            width: 30rem;
+        &.brief{
+            margin-top: 0.5rem;
         }
     }
 

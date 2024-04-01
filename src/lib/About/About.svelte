@@ -1,22 +1,38 @@
 <script lang="ts">
+	import Skills from './Skills/Skills.svelte';
+	import SocialLinks from './SocialLinks/SocialLinks.svelte';
+	import arrowLeftIcon from '$lib/assets/arrow-left.svg';
+	import downloadIcon from '$lib/assets/download-icon.svg';
+
 	import './about.scss';
 </script>
 
-<div class="about">
-	<div>
-		<h1>Vikrant Rath</h1>
-		<h2>Senior Full Stack Engineer</h2>
-		<p>
-			I build beautiful, dynamic, and scalable applications with seamless user experiences across
-			the frontend and backend
+<div class="about lg:flex lg:justify-between lg:gap-4">
+	<div class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:py-24 content-end">
+		<h1 class="text-4xl font-bold">Vikrant Rath</h1>
+		<h2 class=" mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+			Senior Full Stack Engineer
+		</h2>
+		<p class="mt-4 max-w-xs leading-normal">
+			I build fluid, dynamic, and scalable applications with seamless user experiences across the
+			frontend and backend.
 		</p>
+		<SocialLinks />
+		<Skills />
+		<a class="mt-4 flex gap-1" href="/projects"
+			>View My Projects <img class="w-5 pt-1" src={arrowLeftIcon} alt="arrow-left" /></a
+		>
 	</div>
-	<div class="intro">
+	<div class="pt-24 lg:w-1/2 lg:py-24">
 		<p class="brief">
-			As a seasoned full stack developer with a proven track record of delivering exceptional
-			software solutions, I bring a wealth of expertise in Java and JavaScript to the table. With
-			almost 6 of hands-on experience in both frontend and backend development, I
-			possess a deep understanding of modern web technologies and frameworks.
+			As a seasoned <strong>Full-Stack</strong> developer with a proven track record of delivering
+			exceptional software solutions, I bring a wealth of expertise in <strong>Java</strong> and
+			<strong>JavaScript</strong>
+			to the table. With almost <strong>6 years</strong> of hands-on experience in both
+			<strong>Front-End</strong>
+			and
+			<strong>Back-End</strong> development, I possess a deep understanding of modern web technologies
+			and frameworks.
 		</p>
 		<p class="brief">
 			My passion for crafting elegant, efficient code is matched only by my commitment to creating
@@ -34,7 +50,13 @@
 		<p class="brief">
 			In addition to my technical prowess, I am known for my strong communication skills,
 			collaborative approach, and passion for continuous learning. I thrive in fast-paced,
-			collaborative environments where creativity and innovation are encouraged.
+			collaborative environments where creativity and innovation is encouraged.
 		</p>
+		<div class="flex flex-col mt-4 gap-4">
+			<a class="mt-4 flex gap-1" href="/projects"
+				>Resume<img class="w-5" src={downloadIcon} alt="arrow-left" /></a
+			>
+			<span>Professional Experience</span>
+		</div>
 	</div>
 </div>

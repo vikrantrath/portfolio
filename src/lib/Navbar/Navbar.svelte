@@ -11,13 +11,17 @@
 			url: '/projects'
 		},
 		{
+			label: 'Experience',
+			url: '/experience'
+		},
+		{
 			label: 'Contact & Social',
 			url: '/contact'
 		}
 	];
 </script>
 
-<div class="nav">
+<div class="nav pt-4">
 	<ul>
 		{#each navItems as navItem (navItem.label)}
 			<li><a href={navItem.url}>{navItem.label}</a></li>
