@@ -28,7 +28,7 @@
 </script>
 
 <div class="about lg:flex lg:gap-4 justify-center items-center flex-col mt-12">
-	<div class="flex flex-col gap-12 w-1/2">
+	<div class="flex flex-col gap-12 lg:w-1/2">
 		{#each experiences as experience}
 			<ExperienceTile {experience} />
 		{/each}

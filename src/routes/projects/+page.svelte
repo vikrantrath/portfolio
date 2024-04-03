@@ -10,19 +10,25 @@
 		{
 			imageUrl: blogImg,
 			title: 'Full Stack Foodie Blog',
-			description: 'A blog with technology articles built with Angular',
+			description: `Welcome to our niche tech blog, a passion project built with Angular, TypeScript, & Bootstrap.
+			 Dive into exclusive articles tailored to tech enthusiasts like you. 
+			 Join us on this journey of discovery as we explore the latest trends and insights in technology together!`,
 			link: 'https://fullstackfoodieblog.netlify.app/'
 		},
 		{
 			imageUrl: sheerImg,
 			title: 'Sheer Analytics and Insights',
-			description: 'A report generating website built for users using GatsbyJs',
+			description: `Freelance project: a user-friendly report-generating website powered by GatsbyJs. 
+			Optimized for SEO, it features market research articles available for purchase.
+			Elevate your online presence effortlessly!`,
 			link: 'https://www.sheeranalyticsandinsights.com/'
 		},
 		{
 			imageUrl: spotify,
 			title: 'Spotify Vue',
-			description: 'A replica of spotify built on Vue3 from scratch',
+			description: `Discover our Vue3-based Spotify replica, built from scratch.
+			 			Dive deep into Vue3's features with our comprehensive test suite.
+			 			 Join us in exploring the world of music streaming development!`,
 			link: 'https://github.com/vikrantrath/spotify-vue'
 		}
 	];

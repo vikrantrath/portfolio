@@ -3,7 +3,7 @@
 	export let tile: Tile;
 </script>
 
-<a class="container flex gap-8 project-tile p-4" href={tile.link} target="_blank">
+<a class="container flex gap-8 project-tile p-4 lg:w-3/4" href={tile.link} target="_blank">
 	<img class="w-1/2 max-h-40" src={tile.imageUrl} alt={`project-${tile.title}`} />
 	<div class="flex flex-col w-1/2">
 		<span

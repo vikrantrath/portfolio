@@ -4,9 +4,9 @@
 	import arrowLeftIcon from '$lib/assets/arrow-left.svg';
 	import downloadIcon from '$lib/assets/download-icon.svg';
 	import resume from '$lib/vikrant_rath_resume.pdf';
+	import Tooltip from '$lib/Tooltip/Tooltip.svelte';
 
 	import './about.scss';
-	import Tooltip from '$lib/Tooltip/Tooltip.svelte';
 
 	function downloadFile() {
 		let link = document.createElement('a');
